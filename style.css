@@ -131,6 +131,8 @@ body {
     margin: 100px 0 0;
 
     border-radius: 100%;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* ———————————–––––––––––––––-------------------- */
@@ -459,5 +461,143 @@ footer .cols .news-col form button i {
     .skills {
         justify-content: space-between;
         gap: 20px;
+    }
+
+    .skills .left {
+        width: 500px;
+    }
+
+    .skills .left .info h3 {
+        font-size: 22px;
+    }
+
+    .skills .left .info p {
+        font-size: 12px;
+    }
+
+    footer {
+        margin: 150px 0 0;
+    }
+
+    footer .start {
+        width: 90%;
+        left: 5%;
+        top: -12%;
+    }
+
+    footer .cols {
+        flex-wrap: wrap;
+    }
+
+    footer .cols .about-col {
+        flex-basis: 50%;
+    }
+
+    footer .cols .links-col {
+        flex-basis: 50%;
+    }
+
+    footer .cols .news-col {
+        flex-basis: 50%;
+
+        margin-top: 30px;
+    }
+}
+
+/* ———————————–––––––––––––––-------------------- */
+
+@media screen and (max-width: 780px) {
+    .navbar button {
+        display: none;
+    }
+
+    .main h4 {
+        font-size: 24px;
+    }
+
+    .main p.title {
+        font-size: 36px;
+    }
+
+    .main p.subtitle {
+        font-size: 14px;
+    }
+
+    .guarantee .item {
+        flex-basis: 100%;
+    }
+
+    .about {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ———————————–––––––––––––––-------------------- */
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar h2 {
+        display: none;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .main {
+        justify-content: start;
+        height: 320px;
+
+        margin-top: 50px;
+    }
+
+    .main h4 {
+        font-size: 20px;
+    }
+
+    .main p.title {
+        font-size: 28px;
+    }
+
+    .main p.subtitle {
+        font-size: 12px;
+    }
+
+    .main img {
+        margin-top: 40px;
+
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills .left .info h3 {
+        font-size: 20px;
+    }
+
+    footer .start p {
+        display: none;
+    }
+
+    footer .cols .about-col {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    footer .cols .links-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer .cols .news-col {
+        flex-basis: 100%;
     }
 }
