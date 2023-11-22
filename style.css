@@ -455,4 +455,9 @@ footer .cols .news-col form button i {
     .guarantee .item {
         flex-basis: 49%;
     }
+
+    .skills {
+        justify-content: space-between;
+        gap: 20px;
+    }
 }
