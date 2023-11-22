@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+
+    background: #212529;
+}
+
+.seprator {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    display: inline-block;
+
+    margin: 120px 50px 40px;
+    padding: 10px 20px;
+    color: #ffb742;
+}
+
+/* ———————————–––––––––––––––-------------------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2 {
+    color: #ffb642;
+    font-weight: 600;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+
+    font-size: 16px;
+    color: #fff;
+
+    margin: 0 25px 0 0;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li:last-child a {
+    margin: 0 0 0 0;
+}
+
+.navbar ul li:hover a {
+    color: #ffb642;
+}
+
+.hire-btn {
+    background: #ffb642;
+
+    font-size: 16px;
+    padding: 6px 30px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+    background: #fb8c00;
+}
+
+/* ———————————–––––––––––––––-------------------- */
+
+.main {
+    height: 640px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h4 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+
+    text-align: center;
+}
+
+.main h4 span {
+    color: #ffb642;
+    /* text-decoration: underline; */
+}
+
+.main p.title {
+    font-size: 44px;
+    font-weight: 600;
+    color: #fff;
+
+    margin: 8px 0 0;
+
+    text-align: center;
+}
+
+.main p.subtitle {
+    font-size: 16px;
+    color: #ccc;
+
+    margin: 20px 0 0;
+
+    text-align: center;
+}
+
+.main img {
+    width: 200px;
+    height: 200px;
+
+    margin: 100px 0 0;
+
+    border-radius: 100%;
+}
+
+/* ———————————–––––––––––––––-------------------- */
+
+.guarantee {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+
+    margin: 50px 0 0;
+    padding: 0 50px;
+}
+
+.guarantee .item {
+    background: #292b2e;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+    width: 100%;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 0 30px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.guarantee .item:hover {
+    border-color: #ffb642;
+}
+
+.guarantee .item .icon {
+    background: #fff;
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.guarantee .item:hover .icon {
+    background-color: #ffb642;
+}
+
+.guarantee .item .icon i {
+    font-size: 30px;
+}
+
+.guarantee .item .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guarantee .item .info h3 {
+    font-size: 28px;
+    color: #ffb642;
+}
+
+.guarantee .item .info p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.guarantee .item>i {
+    font-size: 30px;
+    color: #fff;
+
+    transition: color 0.3s ease;
+}
+
+.guarantee .item:hover>i {
+    color: #ffb742;
+}
+
+/* ———————————–––––––––––––––-------------------- */
+
+.about img {
+    width: 200px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+
+    padding: 0 30px;
+}
+
+.about .info h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about .info p {
+    font-size: 14px;
+    color: #ccc;
+
+    margin: 10px 0 30px;
+}
+
+/* ———————————–––––––––––––––-------------------- */
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0 50px;
+}
+
+.skills .left {
+    width: 640px;
+}
+
+.skills .left .info h3 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.skills .left .info p {
+    font-size: 14px;
+    color: #ccc;
+
+    margin: 20px 0 30px;
+}
+
+.skills .right {
+    width: 420px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills .right .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #383e45;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 10px;
+}
+
+.skills .right .item i {
+    font-size: 34px;
+    color: #ccc;
+}
+
+/* ———————————–––––––––––––––-------------------- */
+
+footer {
+    position: relative;
+
+    background: #1c1c1c;
+    padding: 90px 50px 40px;
+    margin: 180px 0 0;
+}
+
+footer .start {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #ffb742;
+    width: 70%;
+
+    padding: 30px 25px;
+    border-radius: 15px;
+
+    position: absolute;
+    top: -16%;
+    left: 15%;
+}
+
+footer .start p {
+    font-size: 13px;
+    width: 35%;
+}
+
+footer .start button {
+    background: transparent;
+
+    border: 1px solid #000;
+    border-radius: 100px;
+    padding: 8px 20px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer .start button:hover {
+    background: #fff;
+    border-color: #fff;
+}
+
+footer .cols {
+    display: flex;
+    align-items: start;
+}
+
+footer .cols .about-col {
+    flex: 3;
+}
+
+footer .cols .about-col h3 {
+    color: #ffb742;
+
+    margin: 0 0 20px;
+}
+
+footer .cols .about-col p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+footer .cols .links-col {
+    flex: 3;
+}
+
+footer .cols .links-col h4,
+footer .cols .news-col h4 {
+    color: #fff;
+
+    margin: 0 0 20px;
+}
+
+footer .cols .links-col a {
+    display: block;
+    text-decoration: none;
+
+    font-size: 14px;
+    color: #7b7b7b;
+    line-height: 26px;
+
+    transition: color 0.3s ease;
+}
+
+footer .cols .links-col a:hover {
+    color: #ffb742;
+}
+
+footer .cols .news-col {
+    flex: 3;
+}
+
+footer .cols .news-col p {
+    font-size: 15px;
+    color: #7b7b7b;
+}
+
+footer .cols .news-col form {
+    width: 100%;
+
+    margin: 20px 0 0;
+    position: relative;
+}
+
+footer .cols .news-col form input {
+    background: #212529;
+    width: 100%;
+
+    border: none;
+    border-radius: 100px;
+    padding: 13px 20px;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+footer .cols .news-col form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    background: #ffb742;
+    border: none;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .cols .news-col form button:hover {
+    background-color: #fb8c00;
+}
+
+footer .cols .news-col form button i {
+    font-size: 18px;
+}
+
+/* ———————————–––––––––––––––-------------------- */
+
+@media screen and (max-width: 1100px) {
+    .guarantee {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .guarantee .item {
+        flex-basis: 49%;
+    }
+}
