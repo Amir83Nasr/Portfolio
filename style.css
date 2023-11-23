@@ -410,11 +410,13 @@ footer .cols .news-col form input {
     background: #212529;
     width: 100%;
 
+    outline: none;
     border: none;
     border-radius: 100px;
     padding: 13px 20px;
 
     font-size: 13px;
+    color: #fff;
     font-weight: 400;
 }
 
